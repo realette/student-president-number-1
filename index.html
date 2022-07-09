@@ -62,6 +62,7 @@
             width: fit-content;
             text-align: center;
             margin-bottom: 40vmin;
+            text-decoration: none;
         }
         
         .site {
@@ -76,6 +77,8 @@
             font-weight: bolder;
             font-style: normal;
             font-size: 3vh;
+            text-decoration: none;
+            color: black;
         }
         
         u {
@@ -89,8 +92,8 @@
         }
         
         a {
-            text-decoration: none;
-            color: black;
+            text-decoration: inherit;
+            color: rgb(0, 37, 123);
         }
         
         #jump1 {
@@ -103,6 +106,7 @@
         
         #leftsidedan {
             position: absolute;
+            top: 55pt;
             padding-left: 5%;
             width: 30%;
         }
@@ -124,6 +128,14 @@
             display: flex;
             font-family: 'GowunBatang-Bold';
             font-size: 2.5vmin;
+        }
+        
+        div.site:hover {
+            background-color: rgb(0, 136, 255);
+        }
+        
+        .hobodesc>a {
+            text-decoration: underline;
         }
         
         @media screen and (max-width: 768px) {
@@ -150,8 +162,9 @@
                 left: 50%;
                 transform: translateX(-50%);
                 text-align: center;
-                width: 50%;
-                margin-bottom: 40vmin;
+                width: 80%;
+                margin-bottom: 10vmin;
+                text-decoration: none;
             }
             .site {
                 padding-top: 10px;
@@ -159,12 +172,14 @@
                 width: 100%;
                 height: fit-content;
                 margin-top: 0px;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 background-color: #7DA89B;
                 font-family: 'GowunBatang-Bold';
                 font-weight: bolder;
                 font-style: normal;
                 font-size: 3vh;
+                text-decoration: none;
+                color: black;
             }
             u {
                 text-decoration: underline 0.7px;
@@ -175,8 +190,8 @@
                 text-underline-offset: -18.5pt;
             }
             a {
-                text-decoration: none;
-                color: black;
+                text-decoration: inherit;
+                color: rgb(0, 37, 123);
             }
             body {
                 margin-bottom: 40px
@@ -186,7 +201,6 @@
             }
             #leftsidedan {
                 position: relative;
-                top: 18vmin;
                 width: 94%;
                 padding: 10pt;
                 padding-left: 2%;
@@ -211,28 +225,95 @@
                 display: flex;
                 font-size: 4vmin;
             }
+            div.site:hover {
+                background-color: rgb(0, 136, 255);
+            }
+            .hobodesc>a {
+                text-decoration: underline;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div id="text">
+        <h2>2022 회장단 선거 기호 ①번</h2>
+    </div>
+
+    <div id="text">공약 살펴보기</div>
+    <div id="chartSite">
+        <a target="_blank" href="./wiki.html">
+            <div class="Site" id="q1">독자적인 학교 위키 개설</div>
+        </a>
+        <a target="_blank" href="./PDF.html">
+            <div class="Site" id="q2">수업 자료 PDF 제공</div>
+        </a>
+        <a target="_blank" href="./news.html">
+            <div class="Site" id="q3">학교 언론 활성화</div>
+        </a>
+        <a target="_blank" href="./milk-n-menu.html">
+            <div class="Site" id="q4">열린 급식: 우유 맛 선택 및 메뉴 수요조사 반영</div>
+        </a>
+        <a target="_blank" href="./meeting.html">
+            <div class="Site" id="q5">학급 대표 참여하는 학생회 회의</div>
+        </a>
+        <a target="_blank" href="./test-space.html">
+            <div class="Site" id="q6">시험지 여백 확대</div>
+        </a>
+        <a target="_blank" href="./esports.html">
+            <div class="Site" id="q7">Esports 대회</div>
+        </a>
+        <a target="_blank" href="./sport-equipment.html">
+            <div class="Site" id="q8">스포츠 장비 대여</div>
+        </a>
+        <a target="_blank" href="./watersoap.html">
+            <div class="Site" id="q9">액체 비누 수리 및 교체</div>
+        </a>
+        <a target="_blank" href="./trashcan.html">
+            <div class="Site" id="q10">운동장 쓰레기통 설치</div>
+        </a>
+    </div>
     <div id="leftsidedan">
         <div id="jump1"></div>
         <div id="desc">후보 소개</div>
         <div id="flexbox">
             <div>
-                <img id="writerimg" srcset="/borderus/writer/JDS/JDS.jpg 400w" sizes="(max-width: 768px) 18pt ,25pt">
+                <img id="writerimg" srcset="./img/Joo.png 150w" sizes="(max-width: 768px) 18pt ,25pt">
             </div>
-            <div>
-                이름: 정든솔<br><br>현재 게임 이펙트 디자이너로 취업을 준비하고 있고, 취미로 밴드를 운영하고 있다.
+            <div class="hobodesc">
+                회장 후보: 주영욱<br><br>현재 방송부 차장 및 학급 실장으로 지내고 있고, 정보, 기술, 문학, 철학 등 다방면에 관심을 갖고 있다. 활동적이며 도움이 될 수 있는 곳에 영향력을 펼쳐야한다는 신념으로 <a target="_blank" href="https://realette.github.io/class/">2학년 시간표 제작 프로젝트</a>, 런치리그 측과 협의하여 <a target="_blank" href="https://realette.github.io/soccer/2grade/">점수표 사이트 제작</a>                및 방송부원으로서 <a target="_blank" href="https://www.youtube.com/watch?v=VV8vOE6pudo&list=PL3CRg4a50AGfOO3N8AHCRlYTCIklJ4Ogn">촬영 후 하이라이트 영상</a>을 만들어 운영에 도움을 준 바 있다.
             </div>
         </div>
-    </div>
-    <div id="text">작가별 분류: 정든솔의 글 모음</div>
-    <div id="chartSite">
-        <a target="_blank" href="/borderus/writer/JDS/4-1">
-            <div class="Site" id="1">밤과 새벽</div>
-        </a>
+        <br><br><br>
+        <div id="flexbox">
+            <div>
+                <img id="writerimg" srcset="./img/Kim.jpg 600w" sizes="(max-width: 768px) 18pt ,25pt">
+            </div>
+            <div class="hobodesc">
+                부회장 후보: 김미슬<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+
+            </div>
+        </div>
+        <br><br><br>
+        <div id="flexbox">
+            <div>
+                <img id="writerimg" srcset="./img/Hong.jpg 600w" sizes="(max-width: 768px) 18pt ,25pt">
+            </div>
+            <div class="hobodesc">
+                부회장 후보: 홍록기<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+
+            </div>
+        </div>
+        <br><br><br>
+        <div id="flexbox">
+            <div>
+                <img id="writerimg" srcset="./img/Joo.png 150w" sizes="(max-width: 768px) 18pt ,25pt">
+            </div>
+            <div class="hobodesc">
+                부회장 후보: 심형태<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+
+            </div>
+        </div>
     </div>
     <script>
     </script>
