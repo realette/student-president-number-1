@@ -7,7 +7,7 @@
     nether423@outlook.com 이곳으로 연락주길 바랍니다.-->
 
 <head>
-    <title>공약 설명 - 학습 PDF 제공</title>
+    <title>공약 설명 - 독자적인 학교 위키 개설</title>
     <meta name="author" content="Yeong-wook Joo">
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
@@ -71,9 +71,33 @@
         }
         
         a {
+            width: fit-content;
+        }
+        
+        .tab {
+            padding-left: 4%;
+        }
+        
+        .desc {
+            font-size: 10pt;
+            color: rgb(64, 64, 64);
+            line-height: 120%;
+        }
+        
+        .back {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            background-color: #7DA89B;
+            font-family: 'GowunBatang-Bold';
+            font-weight: bolder;
+            font-style: normal;
+            font-size: 3vh;
             text-decoration: none;
             color: black;
-            width: fit-content;
         }
         
         @media screen and (max-width: 768px) {
@@ -121,36 +145,63 @@
                 text-underline-offset: -18.5pt;
             }
             a {
-                text-decoration: none;
-                color: black;
                 width: fit-content;
             }
             .tab {
                 padding-left: 4%;
+            }
+            .desc {
+                font-size: 10pt;
+                color: rgb(64, 64, 64);
+                line-height: 120%;
+            }
+            .back {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                height: fit-content;
+                margin-top: 0px;
+                margin-bottom: 20px;
+                background-color: #7DA89B;
+                font-family: 'GowunBatang-Bold';
+                font-weight: bolder;
+                font-style: normal;
+                font-size: 3vh;
+                text-decoration: none;
+                color: black;
             }
         }
     </style>
 </head>
 
 <body>
-    <h1 id="title">공약 설명 - 학습 PDF 제공</h1>
+    <h1 id="title">공약 설명 - 독자적인 학교 위키 개설 </h1>
     <h4 id="writer">작성: 기호 1번 회장 후보 주영욱</h4>
     <div id="text">
-        두 줄 요약
-        <div class="tab">교과서 Ebook 제공, 교과 선생님 학습 자료 다운로드 가능한 시스템 개설</div>
+        세 줄 요약
+        <div class="tab">교내의 세부 정보를 다뤄 정보불균형을 해결할 수 있는 광희고등학교만의 위키를 개설하고 학생 여러분과 함께 가꾸겠습니다.</div>
 
         <br> 출판사에서 제공하는 교과서 웹용 Ebook이나, 교과 선생님께서 직접 제작하신 학습 자료를 학생들에게 열람하거나 다운로드 받을 수 있도록 하는 시스템을 구성하여 질병 결석 시 또는 내신 준비 시 이용할 수 있게 하려고 합니다.
         <br>
         <br>
-        <video src="./video/PDF.mp4" width="100%" controls>
+        <video src="./video/wiki.mp4" width="100%" controls>
               </video>
+        <div class="desc">영상은 정보 불균형 상황을 설명하기 위한 예시 상황과 공약에 대한 설명입니다.</div>
         <br>
-        <br>학교에서 자체 자료로 수업을 가장 많이 진행하시는 선생님 두 분께 인터뷰를 요청하여 공약 이행 여부를 살펴보았습니다. 두 분 모두 흔쾌히 수업용 PDF자료를 제공하실 의사가 있다고 하셨습니다. 선생님들께서 말씀해주신 유의할 부분을 주의하여 공약을 다듬어 이행하겠습니다.
+        <br>저희도 1학년 때, 학교를 처음 와서 학교에 대해 아는 것이 거의 없었습니다. 모든 것이 낯설었고, 물어볼 사람도 마땅히 없었거나, 물어보기 미안할 정도로 사소한 부분들이 궁금한 적이 많았습니다. 그러나 어디서 정보를 얻는 지 미리 알고 있는 친구들을 볼 때면 부러울 때가 많았습니다.
+        <br><br>그래서 일 년 전부터 이 문제에 대해 내가 정말 할 수 있는 것이 없을까 고민하다가 위키백과를 떠올렸고, 광희중고등학교 나무위키를 수정해본 기억을 살려서, 이참에 나무위키의 문서 중 하나를 수정하는 정도가 아니라, 학생회에서 운영하고 학생들이 참여해서 이른바 '광희위키'를 가꾸어 나가는 게 어떨까? 하는 생각이 들게 되었습니다.
         <br>
         <br>
-        <br>자료 제공이 당연한 의무가 아니기 때문에, 선생님께서 지적해주신 부분인, '수업 자료 제공해주시는 과목 선생님들과 아닌 선생님들을 정확히 구분하여 명시'하고, 교과서 Ebook 또한 출판사를 잘 확인하여 사용 가능한 출판사인지 확인하고 공유하겠습니다. 또한 저작권 윤리 의식을 함양할 수 있도록 지속적으로 교육하는 노력도 뒷받침하겠습니다.
-
-
+        <img id="writerimg" srcset="./img/wiki.png 2200w" sizes="50%">
+        <div class="desc">위 사진은 회장 후보 주영욱의 로컬컴퓨터에 설치된 테스트 위키를 스크린샷한 사진입니다.</div>
+        <br>
+        <br> 이와 같이 이미 테스트 위키 설치에는 이미 성공했으며, 당선된다면 학교 위키를 개설하여 기초 문서를 작성하고, 운영 관리에 대해 학생회에서 논의한 다음, 서버에 올려 학생 여러분이 사용할 수 있도록 하겠습니다.
+        <br>
+        <br>또한 저는 여러 사이트(<a target="_self" href="https://realette.github.io/class/">2학년 시간표 제작 프로젝트</a>, <a target="_self" href="https://realette.github.io/soccer/2grade/"> 런치리그 점수표 사이트</a>)를 개설하면서 웹 제작에 익숙하기 때문에 성공적으로 개설할 수 있는 상황입니다.
+        <br><br>
+        <a target="_self" href="./">
+            <div class="back">홈으로 돌아가기</div>
+        </a>
     </div>
 </body>
 
