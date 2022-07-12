@@ -1,0 +1,196 @@
+<html>
+<!--테두우리는 주영욱과 홍록기가 만든 웹기반 동인 잡지로,
+    문학/영상/웹/음악에 걸친 다양한 시도와 실험을 하고 원하는 작품을 창작하고
+    연재하는 플랫폼이 되길 희망하는 마음에서 만들었다.-->
+
+<!--만약 당신이 우리와 함께 하길 원한다면 https://open.kakao.com/me/kieukette 또는
+    nether423@outlook.com 이곳으로 연락주길 바랍니다.-->
+
+<head>
+    <title>저이른바 "초코 우유 공약"을 모든 포스터나 피켓에서 제거했습니다.
+    </title>
+    <meta name="author" content="Miseul Kim">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Reply-To" content="nether423@outlook.com">
+    <meta http-equiv="Email" content="nether423@outlook.com">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel="icon" type="image/png" href="./ico-file/ico.png" sizes="192x192">
+    <style>
+        @font-face {
+            font-family: 'KyoboHandwriting2020A';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Iropke Batang';
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.woff') format('woff');
+        }
+        
+        p {
+            margin-top: 50pt;
+            margin-bottom: 50pt;
+        }
+        
+        #text {
+            letter-spacing: 1pt;
+            word-spacing: -1pt;
+            line-height: 150%;
+            font-family: 'Iropke Batang';
+            font-size: 15pt;
+            padding-left: 25%;
+            padding-right: 25%;
+            padding-bottom: 20vw;
+        }
+        
+        #title {
+            font-family: 'KyoboHandwriting2020A';
+            padding-left: 2%;
+            padding-top: 2%;
+        }
+        
+        #writer {
+            font-family: 'KyoboHandwriting2020A';
+            padding-left: 2%;
+        }
+        
+        u {
+            text-decoration: underline 0.5px;
+            text-underline-offset: -13.5pt;
+        }
+        
+        #titleU {
+            text-decoration: underline 2px;
+            text-underline-offset: -18.5pt;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .tab {
+            padding-left: 4%;
+        }
+        
+        .desc {
+            font-size: 10pt;
+            color: rgb(64, 64, 64);
+            line-height: 120%;
+        }
+        
+        .back {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            background-color: #7DA89B;
+            font-family: 'GowunBatang-Bold';
+            font-weight: bolder;
+            font-style: normal;
+            font-size: 3vh;
+            text-decoration: none;
+            color: black;
+        }
+        
+        @media screen and (max-width: 768px) {
+            @font-face {
+                font-family: 'KyoboHandwriting2020A';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: 'Iropke Batang';
+                font-style: normal;
+                font-weight: 400;
+                src: url('https://cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.woff') format('woff');
+            }
+            p {
+                margin-top: 50pt;
+                margin-bottom: 50pt;
+            }
+            #text {
+                letter-spacing: 1pt;
+                word-spacing: -1pt;
+                line-height: 150%;
+                font-family: 'Iropke Batang';
+                font-size: 12pt;
+                padding-left: 4%;
+                padding-right: 4%;
+                padding-bottom: 4vw;
+            }
+            #title {
+                font-family: 'KyoboHandwriting2020A';
+                padding-left: 2%;
+                padding-top: 2%;
+            }
+            #writer {
+                font-family: 'KyoboHandwriting2020A';
+                padding-left: 2%;
+            }
+            u {
+                text-decoration: underline 0.7px;
+                text-underline-offset: -12pt;
+            }
+            #titleU {
+                text-decoration: underline 2px;
+                text-underline-offset: -18.5pt;
+            }
+            .tab {
+                padding-left: 4%;
+            }
+            .desc {
+                font-size: 10pt;
+                color: rgb(64, 64, 64);
+                line-height: 120%;
+            }
+            a {
+                text-decoration: none;
+            }
+            .back {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: fit-content;
+                height: fit-content;
+                margin-top: 0px;
+                margin-bottom: 20px;
+                background-color: #7DA89B;
+                font-family: 'GowunBatang-Bold';
+                font-weight: bolder;
+                font-style: normal;
+                font-size: 3vh;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">이른바 "초코 우유 공약"을 모든 포스터나 피켓에서 제거했습니다.
+    </h1>
+    <h4 id="writer">작성: 기호 1번 회장 후보 일동</h4>
+    <div id="text">
+        영양사 선생님께 공약 제출 전에 유색 우유에 관련해 여쭤보았고 우유 도난 문제만 해결할 수 있다면 가능한 공약이라셔서 확신을 갖고 공약으로 선정했으나,
+        <br>행정실에 여쭤보니 현재 우리 학교에 우유를 납품하는 회사, '남양'은 우유 급식으로 제공할 수 있는 유색우유가 없고, '서울우유'는 기준에 맞는 유색 우유가 있었습니다. 그러나 우유 업체는 학교와 업체들간의 낙찰로 선정되는데, 낙찰은 저희가 개입할 수 없는 외부적인 요소이기 때문에,
+        <br>될 수도 있고, 안 될 수도 있는 외부 요소로 공약을 거는 것은 맞지 않다고 생각하여 더 늦지 않게 우유 관련 공약을 삭제 처리하고, 모든 포스터나 피켓에서 제거하게되었습니다. 이유가 어찌되었든 결론적으로는 확실하지 않은 공약으로 저희 후보를 홍보한 것에 학생 여러분께 진심으로 사과드리고, 남은 공약은 더더욱 확실하게 준비하겠습니다.
+        <br>
+        <br>-기호 1번 회장단 후보 일동-
+        <br>
+        <br>
+        <a target="_self" href="./">
+            <div class="back" style="text-decoration: none;">홈으로 돌아가기</div>
+        </a>
+    </div>
+</body>
+
+</html>
